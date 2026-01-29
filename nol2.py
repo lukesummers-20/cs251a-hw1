@@ -70,9 +70,7 @@ main_memory = SingleChannelDDR4_2400(size="2GB")
 
 caches = PrivateL1CacheHierarchy(
     l1d_size="32KiB",
-    l1d_assoc=8,
     l1i_size="32KiB",
-    l1i_assoc=8,
 )
 
 my_ooo_processor = MyOutOfOrderProcessor(
